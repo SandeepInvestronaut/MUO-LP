@@ -949,3 +949,44 @@ img.testimonial-avatar {
 .specilisation_container .mobile_list{
   margin-top: 25px;
 }
+
+
+/*Back-To-Top Button CSS*/
+#button {
+  display: flex;
+  background-color: #F5801F;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  cursor: pointer;
+}
+#button::after {
+  content: '';
+  background-image: url('Assets/back-to-top-arrow.png');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  display: block;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*End*/
