@@ -1,0 +1,951 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  border-bottom: 0.8px solid #e2e2e2;
+}
+.header .left_logo img {
+  width: 263px;
+  max-width: 100%;
+}
+
+.header .right_logo img {
+  width: 130px;
+  object-fit: cover;
+}
+/*Hero Section CSS*/
+
+.hero_section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero_section::before {
+  content: "";
+  background-image: url(Assets/Rectangle_1.png);
+  position: absolute;
+  /* width: var(--before-width); */
+  width: 100%;
+  height: 554px;
+  top: 90px;
+  left: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: width 0.5s ease-in-out;
+}
+
+.hero_section_info p:nth-child(1),
+p.mobile {
+  font-size: 23px;
+  color: #333333;
+  font-weight: 700;
+}
+
+.hero_section_info h1,
+h1.mobile {
+  font-size: 84px;
+  line-height: 86px;
+  font-weight: 700;
+  color: #1a367b;
+}
+
+.hero_section_info p:nth-child(2),
+.mobile {
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.hero_section_info button {
+  background: #ffffff;
+  color: #f76e31;
+  border: none;
+  font-size: 30px;
+  line-height: 57px;
+  font-weight: 700;
+  padding: 0 20px;
+}
+
+.hero_section_info p:nth-child(3),
+.hero_section_info p:nth-child(6) {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 21px;
+  font-weight: 400;
+  margin-top: 8px;
+  padding-right: 60px;
+}
+
+.hero_section_info p:nth-child(4) {
+  font-size: 18px;
+  margin: 8px 0;
+  font-weight: 500;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.hero_section input,
+optgroup,
+select,
+textarea {
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 45px;
+  border: 1px solid #444444;
+  padding: 13px 17px;
+}
+
+.hero_section form {
+  background: #3cb5f3;
+  padding: 35px 40px;
+  border-radius: 40px;
+  border: 2px solid #000000;
+}
+
+.hero_section form p:nth-child(1) {
+  font-size: 28.36px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.hero_section .term_policy {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+input[type="checkbox"] {
+  width: auto !important;
+}
+
+.hero_section .form_btn button {
+  padding: 16px 48px 16px 48px;
+  border-radius: 50px;
+  background: #1a367b;
+  border: none;
+  color: #ffffff;
+  font-size: 15.25px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero_section .form_section {
+  padding-right: 45px;
+  position: relative;
+}
+
+.form_section form::after {
+  position: absolute;
+  content: "";
+  background-image: url(Assets/form_top_right_img.png);
+  top: -32px;
+  width: 85px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85px;
+  right: 11px;
+}
+
+.form_section form::before {
+  position: absolute;
+  content: "";
+  background-image: url(Assets/form_bottom_left_img.png);
+  bottom: 66px;
+  width: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 139px;
+  left: -142px;
+}
+
+/* Programme Fetures CSS*/
+.horizonal_box {
+  background: #f4f7fa;
+}
+
+.horizonal_box p:nth-child(1),
+.horizonal_box p:nth-child(3) {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+}
+
+.horizonal_box p:nth-child(2) {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+}
+
+.horizonal_box .container {
+  background: white;
+  box-shadow: 0px 0px 13px 0px #acacac;
+  padding: 30px 30px;
+  top: -20px;
+  position: relative;
+}
+
+.horizonal_box .container .row .col-md-3:nth-child(1),
+.horizonal_box .container .row .col-md-3:nth-child(2),
+.horizonal_box .container .row .col-md-3:nth-child(3) {
+  border-right: 1px solid #b7b7b7;
+}
+
+.programme_detail h2,
+.who_can_enrol h2,
+.programme_highlights h2,
+.placements h2,
+.about_mangalayatan h2,
+.what-our-studens-say h2,
+.why_mou h2 {
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.programme_detail p,
+.who_can_enrol p,
+.about_mangalayatan p {
+  color: #444444;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 60px 30px 60px;
+}
+
+/*Programme Detail CSS*/
+
+.programme_detail {
+  background: #f4f7fa;
+  padding-bottom: 70px;
+}
+
+/* Wo Can reveal*/
+.who_can_enrol,
+.programme_highlights,
+.placements,
+.placement_info,
+.about_mangalayatan,
+.what-our-studens-say,
+.why_mou {
+  padding: 71px 0 70px 0;
+}
+
+/*Programme highlights CSS*/
+.programme_highlights {
+  background-image: linear-gradient(#193579, #3cb5f3);
+}
+
+.programme_highlights h2 {
+  color: #ffffff;
+}
+
+.icon img {
+  width: 75px;
+  height: 75px;
+  max-width: 100%;
+  margin: 5px 20px 15px 20px;
+}
+
+.programme_highlights .title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 36px;
+  margin: 0 0 15px 0;
+}
+
+.programme_highlights .sub_title {
+  color: #dedede;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.programme_highlights .col-md-4:nth-child(1) {
+  text-align: right;
+}
+
+.programme_highlights .sub_title:nth-child(3) {
+  margin-bottom: 45px;
+}
+
+/*Placements CSS*/
+
+.placements .container {
+  padding: 0 !important;
+}
+
+.placements .owl-dots {
+  display: none;
+}
+
+#owl-demo .owl-item,
+.owl-demo-1 .owl-item {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+#owl-demo .image_list,
+#owl-demo-1 .image_list {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.owl-carousel .owl-item img {
+  width: auto !important;
+}
+
+#owl-demo .owl-stage,
+#owl-demo-1 .owl-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 82px;
+  height: 100%;
+  text-align: center;
+}
+
+.item.placement_img {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+div#owl-demo,
+div#owl-demo-1 {
+  padding: 40px 30px 40px 30px;
+  border: 1px solid #e7e7e7;
+}
+
+.tabcontent {
+  display: none;
+}
+.active {
+  display: flex !important;
+}
+
+button.tablinks {
+  background: #f4f7fa;
+  border: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 22px;
+}
+
+.tab_btn {
+  display: flex;
+  gap: 20px;
+}
+.tab_btn .active {
+  background-color: #1a367b !important;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  font-family: 500;
+}
+
+.what-our-studens-say .owl-dots {
+  display: flex;
+  justify-content: center;
+}
+/* Placement Info*/
+.placement_info {
+  background-image: linear-gradient(#193579, #3cb5f3);
+}
+
+.place_inr_one p:nth-child(1),
+.place_fore_two p:nth-child(1) {
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.place_inr_one p:nth-child(2),
+.place_fore_two p:nth-child(2) {
+  font-family: "Epilogue";
+  font-weight: 900;
+  font-size: 30px;
+  color: #f76e31;
+  margin-bottom: 0;
+}
+
+.place_inr_one p:nth-child(3),
+.place_fore_two p:nth-child(3) {
+  font-size: 16px;
+  font-family: "Urbanist";
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.place_inr_three p:nth-child(1),
+.place_fore_four p:nth-child(1) {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Epilogue";
+  line-height: 32px;
+}
+
+.place_inr_three p:nth-child(2),
+.place_fore_four p:nth-child(2) {
+  color: #ffffff;
+  font-family: "Urbanist";
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 15px;
+}
+
+.placement_info .container .row .col-md-5:nth-child(1) {
+  border-right: 1px solid #ffffff;
+}
+
+.place_inr_one {
+  margin-bottom: 30px;
+}
+
+/*what our students say testimonial-css ------>start*/
+
+img.testimonial-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  max-width: 100%;
+}
+
+.what-our-studens-say .item {
+  display: grid;
+  padding: 20px 32px;
+  margin-top: 15px;
+}
+
+.what-our-studens-say .owl-stage-outer.owl-height {
+  height: 100% !important;
+}
+
+.what-our-studens-say .owl-stage {
+  display: flex;
+}
+
+.what-our-studens-say .avatar_text p:nth-child(1) {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+}
+
+.what-our-studens-say .item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #444444;
+  text-align: center;
+  order: 3;
+  margin: 0;
+  line-height: 30px;
+}
+
+.avatar_text {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+  margin: 12px;
+}
+
+.avatar_container {
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+
+.avatar_container::before {
+  position: absolute;
+  content: "";
+  background-image: url(Assets/testimonial_quote.png);
+  bottom: -24px;
+  width: 87px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+  left: 12px;
+}
+
+.what-our-studens-say .owl-carousel.owl-drag .owl-item {
+  display: flex;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 50px !important;
+  height: 3px !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #1a367b !important;
+}
+
+.owl-theme .owl-nav {
+  display: none;
+}
+
+/*Footer CSS*/
+.footer {
+  background: #1a367b;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15.25px;
+  font-weight: 400;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/*who_can_enrol CSS*/
+
+.who_can_enrol {
+  position: relative;
+}
+
+.who_can_enrol::before {
+  position: absolute;
+  content: "";
+  background-image: url(Assets/who_can_enroll_bg.png);
+  width: 275px;
+  height: 100%;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  left: 27%;
+  top: 50%;
+  z-index: -1;
+}
+
+/*Why mou css*/
+.why_mou {
+  background-color: #f4f7fa;
+}
+
+.why_mou .container .row {
+  padding: 40px 70px;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  row-gap: 60px;
+}
+/* .why_mou p{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #F76E31;
+  margin: 0;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .why_mou .container .row .col-md-3{
+  border: 1px solid #F76E31;
+        padding: 10px;
+} */
+
+.why_mou p {
+  font-size: 14px;
+  background: #f76e31;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid #333333;
+  border-radius: 50% 50% 50% 0;
+  height: 222.82px;
+  width: 222.82px;
+  position: relative;
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+}
+
+.why_mou::before {
+  left: 0;
+  border-right: 2px solid green; /* Adjust border width and color as needed */
+}
+
+.why_mou {
+  position: relative;
+}
+.why_mou::after {
+  position: absolute;
+  content: "";
+  background: #f76e31ba;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 50% 0 0px 50%;
+  z-index: -1;
+  background-image: linear-gradient(#3cb5f3, #193579);
+}
+
+.why_mou p::before {
+  border-right: 5px solid #1a367b;
+  border-radius: 160px;
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  right: 0px;
+  z-index: 10;
+}
+.why_mou p::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -18px;
+  z-index: 10;
+  background: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: 2px solid #1a367b;
+  border-radius: 8px;
+}
+.why_mou #one::after {
+  background-image: url(Assets/QS_Gold.png);
+}
+.why_mou #two::after {
+  background-image: url(Assets/QS_Diamond.png);
+}
+.why_mou #three::after {
+  background-image: url(Assets/Excellence_Student.png);
+}
+.why_mou #four::after {
+  background-image: url(Assets/An_Outstanding.png);
+}
+.why_mou #five::after {
+  background-image: url(Assets/Most_Progressive.png);
+}
+.why_mou #six::after {
+  background-image: url(Assets/Most_Promising.png);
+}
+.why_mou #seven::after {
+  background-image: url(Assets/Outstanding_University.png);
+}
+.why_mou #eight::after {
+  background-image: url(Assets/Bharat_Shiksha.png);
+}
+
+@media (min-width: 768px) {
+  .why_mou .col-md-3 {
+    flex: 0 0 auto;
+    width: 22% !important;
+  }
+}
+
+/*Mobile Responsive Media Query*/
+
+.mobile {
+  display: none;
+}
+
+.hero_section_info button span {
+  display: none;
+}
+
+.about_mangalayatan p {
+  padding: 10px !important;
+  margin-bottom: 0 !important;
+}
+.mobile_img {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero_girl_imag img {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .web {
+    display: none;
+  }
+
+  .hero_section .row {
+    flex-direction: column-reverse;
+  }
+
+  .form_section form::after,
+  .form_section form::before,
+  .hero_section::before {
+    display: none;
+  }
+
+  .hero_section .form_section {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+
+  .hero_section_info h1,
+  h1.mobile {
+    justify-content: center;
+    font-size: 50px !important;
+    width: 100%;
+  }
+
+  p.mobile {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+  }
+
+  .hero_section {
+    background: #f76e31;
+    padding: 0px 15px 40px 15px;
+  }
+
+  .hero_section_info p:nth-child(3),
+  .hero_section_info p:nth-child(6) {
+    text-align: center;
+    margin-top: 23px;
+    padding-right: 0;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .hero_section_info p:nth-child(4) {
+    display: none;
+  }
+
+  .hero_section_info button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+
+  .horizonal_box .container {
+    top: 0;
+    box-shadow: none;
+  }
+
+  .acknowledgment_icon img {
+    width: 100%;
+  }
+
+  .container .row .col-md-3:nth-child(1),
+  .container .row .col-md-3:nth-child(2),
+  .container .row .col-md-3:nth-child(3) {
+    border-bottom: 1px solid #b7b7b7;
+    padding-bottom: 20px;
+    border-right: none;
+  }
+
+  .horizonal_box .container .row {
+    gap: 25px;
+  }
+
+  .hero_section form p:nth-child(1) {
+    text-align: center;
+  }
+
+  .hero_section_info button span {
+    display: inline;
+  }
+
+  .who_can_enrol::before {
+    display: none;
+  }
+
+  .programme_highlights .col-md-4:nth-child(1) {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .programme_highlights .col-md-4:nth-child(3) {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  div#owl-demo {
+    padding: 30px 100px;
+  }
+
+  .placement_info .row {
+    text-align: center;
+    gap: 50px;
+  }
+
+  .placement_info .col-md-6 {
+    border-top: 1.5px solid #ffffff;
+    padding-top: 50px;
+  }
+
+  .programme_detail h2,
+  .who_can_enrol h2,
+  .programme_highlights h2,
+  .placements h2,
+  .about_mangalayatan h2,
+  .what-our-studens-say h2,
+  .why_mou h2 {
+    font-size: 32px;
+    line-height: inherit;
+    font-weight: 700;
+    text-align: center;
+  }
+  .programme_detail p,
+  .who_can_enrol p,
+  .about_mangalayatan p {
+    color: #444444;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+  }
+  .programme_detail,
+  .programme_highlights,
+  .placements {
+    padding-bottom: 60px;
+    padding-top: 40px !important;
+  }
+  .desktop_img {
+    display: none;
+  }
+  .mobile_img {
+    display: block;
+  }
+
+  .who_can_enrol {
+    padding-top: 0 !important;
+    padding-bottom: 50px;
+  }
+
+  .who_can_enrol .col-md-6:nth-child(2) {
+    padding-top: 40px;
+  }
+  .who_can_enrol p {
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .tab_btn {
+    flex-direction: column;
+  }
+  .col-md-6.bg_overlay {
+    padding-top: 47px;
+  }
+  .programme_highlights .title {
+    font-size: 23px;
+  }
+  .why_mou .col-md-3 {
+    border: none !important;
+  }
+  .header .right_logo img {
+    margin-bottom: 20px;
+  }
+  #owl-demo-1 img.image_list {
+    width: 140px !important;
+    height: auto;
+  }
+  #owl-demo .owl-stage,
+  #owl-demo-1 .owl-stage {
+    gap: 20px;
+  }
+  .owl-item.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .placement_info .container .row .col-md-5:nth-child(1) {
+    border: none;
+  }
+  .why_mou .col-md-3 {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: auto !important;
+  }
+  .why_mou .container .row {
+    row-gap: 40px !important;
+  }
+}
+
+/*FadeIn On Scroll CSS*/
+.fadein {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translate(0, 100px);
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*Specialisation Section*/
+
+.specilisation_container h4 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.specilisation_container ul {
+  padding: 0 !important;
+}
+.specilisation_container li {
+  list-style-type: none;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: rgb(230, 230, 230);
+  margin-bottom: 13px;
+  border-left: 4px solid #f76e31;
+  transition: 0.5s ease-in-out;
+}
+.specilisation_container li:hover{
+  background-color: #f2a37e;
+}
+.specilisation_container .mobile_list{
+  margin-top: 25px;
+}
