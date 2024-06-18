@@ -16,6 +16,21 @@
 }
 /*Hero Section CSS*/
 
+body div#ee-form-8 {
+  width: auto !important;
+}
+
+body div#ee-form-8 {
+  box-shadow: none !important;
+}
+
+body div#ee-form-8-modal-swapper {
+  background: #3cb5f3 !important;
+  border-radius: 40px !important;
+  border: 2px solid black;
+  padding: 35px 40px;
+}
+
 .hero_section {
   position: relative;
   overflow: hidden;
@@ -27,7 +42,7 @@
   position: absolute;
   /* width: var(--before-width); */
   width: 100%;
-  height: 554px;
+  height: 100%;
   top: 90px;
   left: 0;
   z-index: -1;
@@ -98,13 +113,6 @@ textarea {
   padding: 13px 17px;
 }
 
-.hero_section form {
-  background: #3cb5f3;
-  padding: 35px 40px;
-  border-radius: 40px;
-  border: 2px solid #000000;
-}
-
 .hero_section form p:nth-child(1) {
   font-size: 28.36px;
   color: #ffffff;
@@ -154,7 +162,7 @@ input[type="checkbox"] {
   height: 85px;
   right: 11px;
 }
-
+/* 
 .form_section form::before {
   position: absolute;
   content: "";
@@ -166,7 +174,7 @@ input[type="checkbox"] {
   background-size: cover;
   height: 139px;
   left: -142px;
-}
+} */
 
 /* Programme Fetures CSS*/
 .horizonal_box {
@@ -943,18 +951,17 @@ img.testimonial-avatar {
   border-left: 4px solid #f76e31;
   transition: 0.5s ease-in-out;
 }
-.specilisation_container li:hover{
+.specilisation_container li:hover {
   background-color: #f2a37e;
 }
-.specilisation_container .mobile_list{
+.specilisation_container .mobile_list {
   margin-top: 25px;
 }
-
 
 /*Back-To-Top Button CSS*/
 #button {
   display: flex;
-  background-color: #F5801F;
+  background-color: #f5801f;
   width: 45px;
   height: 45px;
   justify-content: center;
@@ -963,16 +970,15 @@ img.testimonial-avatar {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
   cursor: pointer;
 }
 #button::after {
-  content: '';
-  background-image: url('Assets/back-to-top-arrow.png');
+  content: "";
+  background-image: url("Assets/back-to-top-arrow.png");
   font-weight: normal;
   font-style: normal;
   font-size: 2em;
