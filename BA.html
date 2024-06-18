@@ -80,6 +80,26 @@
     <!--External Form Widget Script-->
     <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/muaonline/ee-form-widget/form-8/widget.js"></script>
 
+    <script>
+      //Dynamically adding course program ID's 
+      // Function to add query parameter to URL
+      function addQueryParam(key, value) {
+        var url = new URL(window.location.href);
+
+        // Check if the key already exists
+        if (!url.searchParams.has(key)) {
+          // If key does not exist, add it with the specified value
+          url.searchParams.append(key, value);
+
+          // Redirect to the new URL
+          window.history.replaceState({}, "", url.href);
+        }
+      }
+
+      // Call the function to add 'program=52' if it doesn't exist
+      addQueryParam("program", "52");
+    </script>
+
     <title>Bachelor of Arts (B.A.)</title>
   </head>
 
@@ -414,16 +434,6 @@
 
     <!-- Back to top button -->
     <a id="button"></a>
-
-    <!--Dynamically append specific coure program ID's JS Code-->
-    <script>
-      var url = new URL(window.location.href);
-      if (!url.searchParams.has("program")) {
-        url.searchParams.append("program", "50");
-      }
-
-      window.location.href = url.href;
-    </script>
 
     <!--Jquery-->
 
