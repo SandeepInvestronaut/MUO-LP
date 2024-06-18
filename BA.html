@@ -77,11 +77,10 @@
       gtag("config", "AW-11364680047");
     </script>
 
-<!--External Form Widget Script-->
-<script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/muaonline/ee-form-widget/form-8/widget.js"></script>
+    <!--External Form Widget Script-->
+    <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/muaonline/ee-form-widget/form-8/widget.js"></script>
 
-    <title>Bachelor of Arts
-      (B.A.)</title>
+    <title>Bachelor of Arts (B.A.)</title>
   </head>
 
   <body>
@@ -127,8 +126,7 @@
               Sharpen Your Strategic Edge, Drive Business Results
             </p>
             <h1 class="mobile">Online B.A.</h1>
-            <div class="form" id="ee-form-8">
-            </div>
+            <div class="form" id="ee-form-8"></div>
           </div>
         </div>
       </div>
@@ -173,7 +171,10 @@
       <div class="container">
         <h2>Programme Details</h2>
         <p>
-          The online BA programme offers multidisciplinary learning in the field of Arts. Mangalayatan University offers an online Bachelor of Arts degree that provides students with a well-rounded education, focusing on analytical, communication, and critical thinking skills.
+          The online BA programme offers multidisciplinary learning in the field
+          of Arts. Mangalayatan University offers an online Bachelor of Arts
+          degree that provides students with a well-rounded education, focusing
+          on analytical, communication, and critical thinking skills.
         </p>
         <img
           src="Assets/programme_high.png"
@@ -372,7 +373,9 @@
           </div>
 
           <div class="col-md-3">
-            <p id="five">Most Progressive University of North India by Dialog India</p>
+            <p id="five">
+              Most Progressive University of North India by Dialog India
+            </p>
           </div>
           <div class="col-md-3">
             <p id="six">
@@ -409,28 +412,20 @@
       </p>
     </div>
 
-  <!-- Back to top button -->
-  <a id="button"></a>
+    <!-- Back to top button -->
+    <a id="button"></a>
 
-  <script>
+    <!--Dynamically append specific coure program ID's JS Code-->
+    <script>
+      var url = new URL(window.location.href);
+      if (!url.searchParams.has("program")) {
+        url.searchParams.append("program", "50");
+      }
 
-// Get the current URL
-var url = new URL(window.location.href);
-
-// Check if the 'program' parameter already exists
-if (!url.searchParams.has('program')) {
-    // If 'program' parameter does not exist, add it with value '52'
-    url.searchParams.append('program', '50');
-}
-
-// Redirect to the new URL
-window.location.href = url.href;
-  </script>
-    
+      window.location.href = url.href;
+    </script>
 
     <!--Jquery-->
-
-
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
