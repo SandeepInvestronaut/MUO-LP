@@ -707,6 +707,10 @@ img.testimonial-avatar {
 }
 
 @media screen and (max-width: 768px) {
+  .hero_section_info h1, h1.mobile{
+    line-height: 62px;
+    text-align: center;
+  }
   .hero_girl_imag img {
     display: none;
   }
@@ -995,4 +999,14 @@ img.testimonial-avatar {
   visibility: visible;
 }
 
+
+.ee-form-widget .captchaContainer{
+  align-items: center !important;
+}
+
+#owl-demo .owl-item, .owl-demo-1 .owl-item{
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+}
 /*End*/

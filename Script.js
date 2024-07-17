@@ -39,7 +39,10 @@ $("#owl-demo").owlCarousel({
   loop: true,
   margin: 10,
   autoplay: true,
-  autoplayTimeout: 1000,
+  autoplayTimeout: 1520,
+  smartSpeed: 1500,
+  animateIn: "linear",
+  animateOut: "linear",
   autoplayHoverPause: true,
   responsive: {
     0: {
@@ -54,9 +57,7 @@ $("#owl-demo").owlCarousel({
   },
 });
 
-
 /* Internation-Placement-Carousel */
-
 
 const internationalImage = [
   "Assets/Ip_1.png",
@@ -65,7 +66,7 @@ const internationalImage = [
   "Assets/Ip_4.png",
   "Assets/Ip_5.png",
   "Assets/Ip_6.png",
-  "Assets/Ip_7.png"
+  "Assets/Ip_7.png",
 ];
 
 const internationaContainer = document.getElementById("owl-demo-1");
@@ -85,7 +86,10 @@ $("#owl-demo-1").owlCarousel({
   loop: true,
   margin: 10,
   autoplay: true,
-  autoplayTimeout: 1000,
+  autoplayTimeout: 1520,
+  smartSpeed: 1500,
+  animateIn: "linear",
+  animateOut: "linear",
   autoplayHoverPause: true,
   responsive: {
     0: {
@@ -99,8 +103,6 @@ $("#owl-demo-1").owlCarousel({
     },
   },
 });
-
-
 
 //------END--------
 
@@ -194,48 +196,42 @@ $(".owl-carousel").owlCarousel({
 //-------END----------
 
 document.addEventListener("DOMContentLoaded", () => {
-    gsap.registerPlugin(ScrollTrigger);
-  
-    
-    gsap.to(".left_box",{
-     scrollTrigger:'.left_box',
-      
-     duration:2
-    })
-      
+  gsap.registerPlugin(ScrollTrigger);
 
+  gsap.to(".left_box", {
+    scrollTrigger: ".left_box",
+
+    duration: 2,
   });
+});
 
-
-
-  /*FadeIn On Scroll JS*/
+/*FadeIn On Scroll JS*/
 // fade in grid items  ==================================
 
 $(document).on("scroll", function () {
-  var pageTop = $(document).scrollTop()
-  var pageBottom = pageTop + $(window).height()
-  var tags = $(".fadein")
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".fadein");
 
   for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i]
+    var tag = tags[i];
 
     if ($(tag).offset().top < pageBottom) {
-      $(tag).addClass("visible")
-      $(tag).addClass("animate__animated animate__backInDown")
+      $(tag).addClass("visible");
+      $(tag).addClass("animate__animated animate__backInDown");
     } else {
-      $(tag).removeClass("visible")
-      $(tag).removeClass("animate__animated animate__backInDown")
+      $(tag).removeClass("visible");
+      $(tag).removeClass("animate__animated animate__backInDown");
     }
   }
-})
-
+});
 
 /*Tab */
 
 var tabLinks = document.querySelectorAll(".tablinks");
 var tabContent = document.querySelectorAll(".tabcontent");
 
-tabLinks.forEach(function(el) {
+tabLinks.forEach(function (el) {
   el.addEventListener("click", openTabs);
 });
 
@@ -243,36 +239,33 @@ function openTabs(el) {
   var btnTarget = el.currentTarget;
   var country = btnTarget.dataset.country;
 
-  tabContent.forEach(function(el) {
-     el.classList.remove("active");
+  tabContent.forEach(function (el) {
+    el.classList.remove("active");
   });
 
-  tabLinks.forEach(function(el) {
-     el.classList.remove("active");
+  tabLinks.forEach(function (el) {
+    el.classList.remove("active");
   });
   document.querySelector("#" + country).classList.add("active");
-  
+
   btnTarget.classList.add("active");
 }
 
-
-
-
 /*Back-To-Top JS */
 
-var btn = $('#button');
+var btn = $("#button");
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
+    btn.addClass("show");
   } else {
-    btn.removeClass('show');
+    btn.removeClass("show");
   }
 });
 
-btn.on('click', function(e) {
+btn.on("click", function (e) {
   e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+  $("html, body").animate({ scrollTop: 0 }, "300");
 });
 
 /*-----END------*/
