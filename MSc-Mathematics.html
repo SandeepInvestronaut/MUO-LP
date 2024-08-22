@@ -79,7 +79,7 @@
     <!--External Form Widget Script-->
     <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/muaonline/ee-form-widget/form-8/widget.js"></script>
 
-    <script>
+    <!-- <script>
       //Dynamically adding course program ID's 
       // Function to add query parameter to URL
       function addQueryParam(key, value) {
@@ -97,7 +97,7 @@
 
       // Call the function to add 'program=15' if it doesn't exist
       addQueryParam("program", "15");
-    </script>
+    </script> -->
 
     <title>Master of Science
       (Mathematics)</title>
@@ -431,6 +431,41 @@
   <a id="button"></a>
 
     <!--Jquery-->
+
+    <script>
+      // Function to add multiple query parameters to the URL
+      function addQueryParams(params) {
+        var url = new URL(window.location.href);
+  
+        // Loop through each key-value pair in the object
+        for (var key in params) {
+          if (params.hasOwnProperty(key)) {
+            // Check if the key already exists
+            if (!url.searchParams.has(key)) {
+              // If key does not exist, add it with the specified value
+              url.searchParams.append(key, params[key]);
+            }
+          }
+        }
+  
+        // Update the URL without reloading the page
+        window.history.replaceState({}, "", url.href);
+      }
+  
+      // Extract and format the course name for utm_campaign
+      const courseNameElement = document.querySelector('h1.web');
+      const courseName = courseNameElement.textContent.trim();
+      const formattedCourseName = courseName.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-');
+      console.log(formattedCourseName)
+  
+      // Add 'program=5' and the dynamic utm_campaign
+      addQueryParams({
+        "program": "15",
+        "utm_source": "GoogleAds",
+        "utm_medium": "SearchCampaign",
+        "utm_campaign": formattedCourseName
+      });
+    </script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
